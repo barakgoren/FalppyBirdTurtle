@@ -4,12 +4,11 @@ import turtle
 from threading import Thread
 from time import sleep
 from Position import Position
-from Week2.Cloud import Cloud
+from Cloud import Cloud
 
-bird_gif = ["../Week2/Pics/bird.gif",
-            "../Week2/Pics/bird2.gif",
-            "../Week2/Pics/bird3.gif"]
-obstacles = ["../Week2/Pics/Obstacles/Obs.gif", "../Week2/Pics/Obstacles/FlippedObs.gif"]
+bird_gif = ["./Pics/bird.gif",
+            "./Pics/bird2.gif",
+            "./Pics/bird3.gif"]
 # Set up the screen'
 wn = turtle.Screen()
 wn.title("Final Game Project")
@@ -17,9 +16,6 @@ wn.bgcolor("#3fd6e0")
 wn.addshape(bird_gif[0])
 wn.addshape(bird_gif[1])
 wn.addshape(bird_gif[2])
-wn.addshape("../Week2/Pics/Obstacles/Obs.gif")
-wn.addshape(obstacles[0])
-wn.addshape(obstacles[1])
 wn.setup(700, 1.0)
 wn.tracer(0)
 pen = turtle.Turtle()
